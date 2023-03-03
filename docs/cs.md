@@ -161,6 +161,12 @@ string first = "John";
 string last = "Doe";
 string name = first + " " + last;
 Console.WriteLine(name); // => John Doe
+
+string str1 = "Name";
+string str2 = "John";
+string str3 = "Doe"
+string str = string.Join("-", str1, str2, str3);
+Console.WriteLine(str);// => Name John Doe
 ```
 
 ### 字符串插值
@@ -170,6 +176,12 @@ string first = "John";
 string last = "Doe";
 string name = $"{first} {last}";
 Console.WriteLine(name); // => John Doe
+
+//使用String类提供了的Insert方法，可以向一个字符串中的任意位置插入新元素。
+string str = "Hello";
+string insertStr1 = str.Insert(5, "!");// => 'Hello!'
+string insertStr2 = insertStr1.Insert(5, ", Word");// => Hello Word!
+Console.WriteLine(insertStr2);
 ```
 
 ### 字符串成员
